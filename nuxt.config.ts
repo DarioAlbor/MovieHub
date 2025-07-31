@@ -3,10 +3,10 @@ import * as dotenv from 'dotenv'
 
 dotenv.config()
 
-const API_KEY = process.env.NUXT_OMDB_API_KEY || 'aeff7aa5'
-const API_URL = process.env.NUXT_OMDB_API_URL || 'https://www.omdbapi.com'
-const TOKEN_NAME = process.env.NUXT_AUTH_TOKEN_NAME || 'auth_token'
-const APP_URL = process.env.NUXT_APP_URL || 'https://moviehub-verifarma.vercel.app'
+const API_KEY = process.env.NUXT_OMDB_API_KEY || ''
+const API_URL = process.env.NUXT_OMDB_API_URL || ''
+const TOKEN_NAME = process.env.NUXT_AUTH_TOKEN_NAME || ''
+const APP_URL = process.env.NUXT_APP_URL || ''
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',

@@ -40,8 +40,8 @@ interface MovieDetails extends Movie {
 export const useMovieService = () => {
   const config = useRuntimeConfig()
   
-  const apiEndpoint = config.public.omdbApiUrl || 'https://www.omdbapi.com'
-  const apiToken = config.public.omdbApiKey || 'aeff7aa5'
+  const apiEndpoint = config.public.omdbApiUrl || ''
+  const apiToken = config.public.omdbApiKey || ''
   
   const apiClient = axios.create({
     baseURL: apiEndpoint,
