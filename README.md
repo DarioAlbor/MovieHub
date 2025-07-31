@@ -58,3 +58,15 @@ Para probar la aplicación, puedes usar las siguientes credenciales:
 
 - **Email**: admin@moviehub.com
 - **Contraseña**: admin123
+
+### Deploy con Docker
+
+1. Construye la imagen Docker:
+```bash
+docker build -t moviehub .
+```
+
+2. Ejecuta el contenedor:
+```bash
+docker run -p 3000:3000 moviehub
+```
